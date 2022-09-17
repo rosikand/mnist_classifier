@@ -59,7 +59,6 @@ class ModelInterface(utils.BaseModelInterface):
         
         # normalize if needed 
         if torch.max(img) > 1.1:
-            print("YIP")
             img = img/torch.max(img) 
 
     
